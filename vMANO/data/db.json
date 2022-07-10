@@ -1,0 +1,172 @@
+{
+  "nfvo": [
+    {
+      "name": "nfvo1",
+      "chip": "1 vCPU x86",
+      "drive": "1TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "04"
+    },
+    {
+      "name": "nfvo2",
+      "chip": "1 vCPU x86",
+      "drive": "2TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "06"
+    },
+    {
+      "name": "nfvo3",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo4",
+      "chip": "1 vCPU x86",
+      "drive": "1TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "04"
+    },
+    {
+      "name": "nfvo5",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "05"
+    },
+    {
+      "name": "nfvo6",
+      "chip": "1 vCPU x86",
+      "drive": "1TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "06"
+    },
+    {
+      "name": "nfvo7",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo8",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo9",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo10",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo11",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo12",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo13",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo14",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo15",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo16",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo17",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo18",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo19",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo20",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo21",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo22",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo23",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    },
+    {
+      "name": "nfvo24",
+      "chip": "1 vCPU x86",
+      "drive": "1.5TB HDD",
+      "ram": "1 vCPU x86",
+      "monitor": "03"
+    }
+  ]
+}

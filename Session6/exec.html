@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Tìm kiếm</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var str = "chào mừng bạn đến với bachkhoa-aptech";
+            var patt = new RegExp("bachkhoa-aptech");
+            var res = patt.exec(str);
+
+            if(res != "")
+            {
+                document.getElementById("demo").innerHTML = "hello " + res;
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML = "Không tìm thấy chuỗi này"
+            }
+        }
+    </script>
+</body>
+</html>

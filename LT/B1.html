@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-25">
+
+                        <div class="logo-header">
+                            <a href="">
+                                <img src="imgs/logo.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+
+                        <div class="nav">
+                            <ul class="navbar main_menu">
+                                <li><a href="">Home</a></li>
+                                <li>
+                                    <a href="">Shop</a>
+                                    <ul class="sub_menu">
+                                        <li><a href="">Shop 1</a></li>
+                                        <li>
+                                            <a href="">Shop 2
+                                                <ul class="sub_menu">
+                                                    <li><a href="">Shop 2.1</a></li>
+                                                    <li><a href="">Shop 2.2
+                                                        <ul class="sub_menu">
+                                                            <li><a href="">Shop 2.2.1</a></li>
+                                                            <li><a href="">Shop 2.2.2</a></li>
+                                                            <li><a href="">Shop 2.2.3</a></li>
+                                                        </ul>
+                                                    </a>
+                                                    </li>
+                                                    <li><a href="">Shop 2.3</a></li>
+                                                </ul>
+                                            </a>
+                                        
+                                        </li>
+                                        <li><a href="">Shop 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Pages</a></li>
+                                <li>
+                                    <a href="">Blog</a>
+                                    <ul class="sub_menu">
+                                        <li><a href="">Blog 1</a></li>
+                                        <li><a href="">Blog 2</a></li>
+                                        <li><a href="">Blog 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-25">
+
+                        <ul class="navbar menu_right">
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                            <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href=""><i class="fas fa-search"></i></a></li>
+                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="banner">
+            <div class="banner-caption">
+                <h2>Shop</h2>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-15">
+                        <div class="customs_selects">
+                            <select name="product" class="customs_sel_box">
+                                <option value="Filter">Filter</option>
+                                <option value="most_popular">Most Popular</option>
+                                <option value="best_seller">Best Seller</option>
+                                <option value="tranding">Tranding</option>
+                                <option value="featured">Featured</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-50"></div>
+                    <div class="col-35">
+                        
+                        <div class="product_shot">
+                            <div class="customs_selects sort"><b>Sort By:</b>
+                            
+                                <select name="product" class="customs_sel_box">
+                                    <option value="popularity">Sort by Popularity</option>
+                                    <option value="new">Sort by new</option>
+                                    <option value="low">Price: low to high</option>
+                                    <option value="high">Price: high to low</option>
+                                </select>
+                            </div>
+                            <div class="product_shot_view">
+                                <ul class="menu_grid">
+                                    <li><a href="/shop/shop-3" class=""><i class="fas fa-list"></i></a></li> 
+                                    <li><a href="/shop/shop-2" class=""><i class="fas fa-th-large"></i></a></li> 
+                                    <li><a href="/shop" class="active nuxt-link-active"><i class="fas fa-th"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-75">
+                        <!-- List Product -->
+                        <div class="row">
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <a href="" class="image">
+                                            <img src="imgs/product-1.png" class="first_image img-responsive" alt="">
+                                            <img src="imgs/product-8.png" class="hover_image img-responsive" alt="">
+                                        </a>
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-2-hover.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-3-hover.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- abc -->
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-4.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-5.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-4.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- abc -->
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-3.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-2.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-33">
+                                <div class="item_product">
+                                    <div class="product_img">
+                                        <span class="product_new">New</span>
+                                        <img src="imgs/product-1.png" class="img-responsive" alt="">
+                                        <a href="" class="buy">Add to cart</a>
+                                    </div>
+
+                                    <div class="product_info">
+                                        <h3><a href="">Divine Love</a></h3>
+                                        <p>$52</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- abc -->
+                            
+
+                        </div>
+                        <!-- Pagination -->
+                        <div class=" pagination">
+                            <ul class="navbar">
+                                <li><a href="" ><i class="fas fa-angle-left"></i></a></li>
+                                <li class="active"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href=""><i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-25">
+                        <div class="right_sidebar">
+                            <div class="widget">
+                                <div class="form_group ip_search">
+                                    <input type="text" class="form_control" placeholder="Search...">
+                                    <button class="btn_search"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <h2>Product Categories</h2>
+                                <div class="widget_content">
+                                    <label for="t-shirts" class="lbl_radio">T-shirts
+                                        <input id="t-shirts" type="radio" name="category">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="fashion" class="lbl_radio">Fashion
+                                        <input id="fashion" type="radio" name="category">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+
+                                    <label for="Jackets" class="lbl_radio">Jackets
+                                        <input id="Jackets" type="radio" name="category">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="Shoes" class="lbl_radio">Shoes
+                                        <input id="Shoes" type="radio" name="category">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <h2>Color</h2>
+                                <div class="widget_color">
+                                    <label for="color_red" class="lbl_radio">
+                                        <input type="radio" id="color_red" class="color_select" checked="checked" name="modal_product_color">
+                                        <span class="red"></span>
+                                    </label>
+
+                                    <label for="color_blue" class="lbl_radio">
+                                        <input type="radio" id="color_blue" class="color_select" checked="checked" name="modal_product_color">
+                                        <span class="blue"></span>
+                                    </label>
+
+                                    <label for="color_pink" class="lbl_radio">
+                                        <input type="radio" id="color_pink" class="color_select" checked="checked" name="modal_product_color">
+                                        <span class="pink"></span>
+                                    </label>
+
+                                    <label for="color_green" class="lbl_radio">
+                                        <input type="radio" id="color_green" class="color_select" checked="checked" name="modal_product_color">
+                                        <span class="green"></span>
+                                    </label>
+
+                                    <label for="color_yellow" class="lbl_radio">
+                                        <input type="radio" id="color_yellow" class="color_select" checked="checked" name="modal_product_color">
+                                        <span class="yellow"></span>
+                                    </label>
+
+                                    <label for="color_sliver" class="lbl_radio">
+                                        <input type="radio" id="color_sliver" class="color_select" checked="checked" name="modal_product_color">
+                                        <span class="sliver"></span>
+                                    </label>
+                                </div>
+                                <h2>Size</h2>
+                                <div class="widget_size"> 
+                                    <label for="XS" class="lbl_radio">XS
+                                        <input type="radio" id="XS" name="size">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="S" class="lbl_radio">S
+                                        <input type="radio" id="S" name="size">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="M" class="lbl_radio">M
+                                        <input type="radio" id="M" name="size">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="L" class="lbl_radio">L
+                                        <input type="radio" id="L" name="size">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="XL" class="lbl_radio">XL
+                                        <input type="radio" id="XL" name="size">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                
+                                </div>
+                                <h2>Brand</h2>
+                                <div class="widget_brand">
+                                    <label for="Next" class="lbl_radio">Next
+                                        <input id="Next" type="radio" name="brand">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="Adidas" class="lbl_radio">Adidas
+                                        <input id="Adidas" type="radio" name="brand">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="Nike" class="lbl_radio">Nike
+                                        <input id="Nike" type="radio" name="brand">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="Calvin Klein" class="lbl_radio">Calvin Klein
+                                        <input id="Calvin Klein" type="radio" name="brand">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="Geox" class="lbl_radio">Geox
+                                        <input id="Geox" type="radio" name="brand">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                    <label for="River Island" class="lbl_radio">River Island
+                                        <input id="River Island" type="radio" name="brand">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="form_group">
+                                    <button class="button">Clear Filter</button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <h2>FOLOW US INSTAGRAM</h2>
+                <p>Mauris luctus nisi sapien tristique dignissim ornare</p>
+            </div>
+            <div class="row">
+               
+                <div class="col-20">
+                    <div class="item_slide">
+                        <img src="imgs/product-4.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-20">
+                    <div class="item_slide">
+                        <img src="imgs/product-9.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-20">
+                    <div class="item_slide">
+                        <img src="imgs/product-10.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-20">
+                    <div class="item_slide">
+                        <img src="imgs/product-11.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-20">
+                    <div class="item_slide">
+                        <img src="imgs/product-5.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-25">
+                        <div class="logo_footer">
+                            <a href="">
+                                <img src="imgs/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="company_info">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati culpa assumenda voluptas placeat amet consectetur adipisicing elit. Obcaecati culpa assumenda voluptas placeat.</p>
+                        </div>
+                    </div>
+                    <div class="col-25">
+                        <div class="nav_footer">
+                            <h3>INFOMATION</h3>
+                            <ul class="menu_footer">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Frequently Questions</a></li>
+                                <li><a href="">Order Tracking</a></li>
+                                <li><a href="">Compare</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-25">
+                        <div class="nav_footer">
+                            <h3>YOUR ACCOUNT</h3>
+                            <ul class="menu_footer">
+                                <li><a href="">Cart View One</a></li>
+                                <li><a href="">Cart View Two</a></li>
+                                <li><a href="">Empty Cart</a></li>
+                                <li><a href="">Checkout View One</a></li>
+                                <li><a href="">Checkout View Two</a></li>
+                                <li><a href="">Wishlist</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-25">
+                        <div class="nav_footer">
+                            <h3>NEWSLETTER</h3>
+                            <div class="form_group">
+                                <input type="text" placeholder="Your Mail*" class="form_control">
+                            </div>
+                            <div class="form_group">
+                                <button class="button">Send Mail</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

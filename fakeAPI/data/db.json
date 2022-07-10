@@ -1,0 +1,28 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Lập trình Angular",
+      "desc": "Cơ bản",
+      "fee": 100
+    },
+    {
+      "id": 2,
+      "name": "Lập trình JAVA",
+      "desc": "Cơ bản",
+      "fee": 150
+    },
+    {
+      "id": 3,
+      "name": "Lập trình Javascript",
+      "desc": "Cơ bản",
+      "fee": 100
+    },
+    {
+      "id": 4,
+      "name": "HTML, CSS",
+      "desc": "Cơ bản",
+      "fee": 80
+    }
+  ]
+}

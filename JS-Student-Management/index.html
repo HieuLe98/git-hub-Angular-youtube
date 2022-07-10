@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body onload="renderListStudent()">
+    <div class="form-student">
+        <h3>Thông tin sinh viên</h3>
+        <div>
+            <label for="fullname">Họ và tên</label>
+            <input type="text" name="" id="fullname">
+            <span id="fullname-error" class="fullname-error"></span>
+        </div>
+
+        <div>
+            <label for="email">Địa chỉ email</label>
+            <input type="text" name="" id="email">
+            <span id="email-error" class="email-error"></span>
+        </div>
+
+        <div>
+            <label for="phone">Số điện thoại</label>
+            <input type="text" name="" id="phone">
+            <span id="phone-error" class="phone-error"></span>
+        </div>
+
+        <div>
+            <label for="address">Địa chỉ</label>
+            <input type="text" name="" id="address">
+            <span id="address-error" class="address-error"></span>
+        </div>
+
+        <div>
+            <label for="">Giới tính</label>
+            <input type="radio" name="gender" value="1" id="male">Nam
+            <input type="radio" name="gender" value="2" id="female">Nữ
+            <span id="gender-error" class="gender-error"></span>
+        </div>
+
+        <button onclick="save()">Lưu lại</button>
+    </div>
+
+    <div id="list-student">
+        <h3>Danh sách sinh viên</h3>
+        <table id="grid-students" width="600px" border="1" cellpadding="0">
+            
+        </table>
+    </div>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>

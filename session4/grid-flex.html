@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .item {
+            height: 100px;
+            border: 2px solid black;
+            margin-bottom: 30px;
+        }
+
+        .wrap{
+            height: 500px;
+            border: solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col {
+            width: 33.33333%;
+            
+            padding: 0 15px;   
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Lưới 3x3 với float</h1>
+    <div class="wrap">
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <div class="col"><div class="item"></div></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+</body>
+</html>

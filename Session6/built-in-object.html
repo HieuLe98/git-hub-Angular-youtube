@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các đối tượng xây dựng sẵn trong JavaScript</title>
+</head>
+<body>
+    <!--
+        Bài toán: tạo đồng hồ đếm ngược thời gian
+    -->
+    <h1 id="showTime"></h1>
+    <button id="btn">Quay lại</button>
+    <script>
+        // Tháng 0 - 11
+        var btn = document.getElementById("btn");
+        var show = document.getElementById("showTime");
+        var timeTarget = new Date(2022, 0, 1, 0, 0, 0, 0);
+        console.log(timeTarget.toLocaleDateString('vi'));
+        function timeCountDown(target) {
+            // Lấy thời gian hiện tại
+            let secondsNow = new Date().getTime();
+            let secondsTarget = target.getTime();
+            // Lấy thời gian giữ 2 khoảng (seconds)
+            let scondsCount = (secondsTarget - secondsNow) / 1000;
+            // Dựa vào số giây tính ra ngày giờ
+            let days = parseInt(scondsCount / (24*60*60));
+            let hourses = parseInt((scondsCount % (24*60*60)) / (60*60));
+            let minutes = parseInt(((scondsCount % (24*60*60)) % (60*60)) / 60);
+            let seconds = parseInt(((scondsCount % (24*60*60)) % (60*60)) % 60);
+            show.innerHTML = `${days} ngày ${hourses} giờ ${minutes} phút ${seconds} giây`;
+        }
+        setInterval(function() {
+            timeCountDown(timeTarget)
+        }, 1000);
+        //timeCountDown(timeTarget);
+
+        btn.onclick = function() {
+            history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Bộ chọn theo Id */
+        #selectorId{
+            color: red;
+
+        }
+
+        /* Bộ chọn theo Class */
+        .className1{
+            color: royalblue;
+        }
+
+        
+        
+        /* Bộ chọn theo tên thẻ */
+        h1{
+            color: silver;
+        }
+
+        h1[title='abc']{
+            color: slateblue;
+        }
+        /* Bộ chọn kết hợp */
+        h1.className2{
+            color: pink;
+
+        }
+
+        /* Bộ chọn tổng quát */
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Bộ chọn theo phân cấp */
+        div > h1{
+            color: indigo;
+        }
+        section + h1{
+            color: orange;
+        }
+        section ~ h1{
+            color: brown;
+        }
+
+        /* Pseudo Class */
+        ul li:last-child{
+            color: sandybrown;
+        }
+
+        ul li:first-child{
+            color: sandybrown;
+        }
+
+        ul li:nth-child(3){
+            color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="selectorId">Bộ chọn theo id</h1>
+    <h1 class="className1 className2">Bộ chọn theo class</h1>
+    <h1>Bộ chọn theo tên thẻ</h1>
+    <h1 title="abc">Bộ chọn theo thuộc tính</h1>
+    <div title="abc">Bộ chọn theo thuộc tính</div>
+    <div>
+        <section>
+            <h1>Bộ chọn theo phân cấp</h1>
+            <h1>Bộ chọn theo phân cấp</h1>
+        </section>
+        <h1>Bộ chọn theo phân cấp</h1>
+        <h1>Bộ chọn theo phân cấp</h1>
+    </div>
+    <h1>Bộ chọn theo phân cấp</h1>
+
+    <ul>
+        <!-- ::before -->
+        <li>Abc</li>
+        <li>Abc</li>
+        <li>Abc</li>
+        <li>Abc</li>
+        <li>Abc</li>
+        <!-- ::after -->
+    </ul>
+</body>
+</html>

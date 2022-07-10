@@ -1,0 +1,36 @@
+<!--
+    Phương thức Reduce () chạy một hàm trên mỗi phần tử mảng để tạo (giảm nó thành) một giá trị duy nhất.
+
+    Phương thức Reduce () hoạt động từ trái sang phải trong mảng. Xem thêm ReduceRight ().
+
+    Phương thức Reduce () không giảm mảng ban đầu.
+
+    Phương thức Reduce () có thể chấp nhận một giá trị ban đầu (thêm vào giá trị vào trong ngoặc sau hàm được gọi)
+
+    Total: Tổng (giá trị ban đầu / giá trị trả về trước đó)
+
+    reduceRight() hoạt động từ phải sang trái
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.reduce()</h2>
+<p>This example finds the sum of all numbers in an array:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);
+
+document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+</script>
+
+</body>
+</html>

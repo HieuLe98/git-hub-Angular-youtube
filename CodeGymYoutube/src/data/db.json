@@ -1,0 +1,42 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Hà Anh",
+      "dateOfBirth": "05-12-2000",
+      "gender": "Female",
+      "idcard": "051200",
+      "phoneNumber": "0388650123",
+      "email": "phamhami0512@gmail.com",
+      "address": "Lê Văn Lương",
+      "customerType": {
+        "id": 1,
+        "name": "VIP"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Hà Mi",
+      "dateOfBirth": "05-12-2000",
+      "gender": "Female",
+      "idcard": "051200",
+      "phoneNumber": "0388650123",
+      "email": "phamhaanh0512@gmail.com",
+      "address": "Lê Văn Lương",
+      "customerType": {
+        "id": 2,
+        "name": "Pro"
+      }
+    }
+  ],
+  "customerType": [
+    {
+      "name": "VIP",
+      "id": 1
+    },
+    {
+      "name": "Pro",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng Javascript</title>
+</head>
+<body>
+    <!-- JS Inline -->
+    <button onclick="alert('JS Inline')">JS Inline</button>
+
+    <!--JS Internal-->
+    <button id="btn_internal">JS Internal</button>
+
+    <!--JS External-->
+    <button id="btn_external">JS External</button>
+
+
+    <script>
+        // <!--Mã Javascript-->
+        document.getElementById('btn_internal').onclick = function() {
+            alert('JS Internal');
+        }
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>

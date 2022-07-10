@@ -1,0 +1,26 @@
+@media (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+} 
+
+@media (max-width: 767px) {
+    [class*='col'] {
+        width: 100%;
+    }
+}
+
+
+/* Màn hình dekstop lớn >= 1400px
+Màn hình dekstop >= 1200px
+Màn hình dekstop nhỏ >= 992px
+Màn hình máy tính bảng >= 768px
+Màn hình điện thoại >= 576px
+Màn hình điện thoại >= 480px
+Màn hình điện thoại >= 320px */

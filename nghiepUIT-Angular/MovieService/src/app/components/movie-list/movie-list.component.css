@@ -1,0 +1,12 @@
+.panel-danger {
+  border-radius: 4px;
+  border: 2px solid #000;
+}
+
+.panel-heading {
+  background-color: darkgray;
+}
+
+.panel-body {
+  padding: 16px;
+}

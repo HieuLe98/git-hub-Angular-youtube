@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Ẩn hiện mật khẩu với input type password-->
+    <input class="pass" type="password" value="123456">
+    <button class="btn">Hiện</button>
+    <br>
+    <br>
+    <input type="text" class="txt"><button class="btn-add">Add</button>
+    <ul class="show">
+
+    </ul>
+    <p>Total items: <span class="total"></span></p>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        // Để HTML load hết toàn bộ rồi mới chạy jQuey
+        // Cách 1:
+        $(document).ready(function() { // Khi tài liệu (HTML) sẵn sàng (tải hết HTML tags và CSS)
+            // Code jQuery
+            console.log('jQuery running...')
+        })
+        // Cách 2:
+        $(function() {
+            // Code jQuery
+
+            $(".btn").click(function() {
+                if ($(".pass").attr('type') == 'password') {
+                    $(".pass").attr('type', 'text');
+                    $(this).text('Ẩn');
+                    $(".pass").css({
+                        'color': 'red',
+                        'border': '1px solid red'
+                    });
+                } else {
+                    $(".pass").attr('type', 'password');
+                    $(this).text('Hiện');
+                    $(".pass").css({
+                        'color': '#000',
+                        'border': '1px solid #000'
+                    });
+                }
+            })
+        
+        
+            $('.btn-add').click(function() {
+                let txt = $('.txt').val();
+                $('.show').append(`<li>${txt}</li>`);
+                $('.total').text($('.show li').length);
+            })
+
+            $(document).on('dblclick', '.show li', function() {
+                $(this).remove();
+                $('.total').text($('.show li').length);
+            })
+        })
+    </script>
+</body>
+</html>

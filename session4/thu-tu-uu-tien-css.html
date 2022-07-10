@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #txt-red{
+             color: red; 
+        } 
+        */
+        h1.txt-blue [title='txt-green']{
+            color: blue;
+        }
+
+        h1.txt-blue{
+            color: hotpink !important;
+        }
+
+        [title='txt-green']{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <h1>Abc</h1>
+        </section>
+        <h1 id="txt-red" class="txt-blue" title="txt-green">Thứ tự ưu tiên CSS</h1>
+        <h2 title="txt-green">Abc</h2>
+        <h1 id="txt-red" class="txt-blue" title="txt-green">Thứ tự ưu tiên CSS</h1>
+    </div>
+</body>
+</html>

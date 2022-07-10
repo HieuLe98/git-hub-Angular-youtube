@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định dạng biểu mẫu</title>
+</head>
+<body>
+    <!-- Bắt đầu biểu mẫu -->
+    <form name="" action="" method="" enctype="">
+        <!-- Control nhập thông tin -->
+        <!-- 
+            type: Định dạng kiểu control nhập thông tin:
+                text:     Nhập văn bản 1 dòng
+                number:   Nhập số
+                date:     Nhập ngày tháng
+                time:     Chọn thời gian
+                file:     chọn file
+                radio:    lưa chọn 1
+                checkbox: lựa chọn nhiều
+                color:    lựa chọn màu
+                email:    nhập địa chỉ email
+                range:    thanh slide
+                password: nhập mật khẩu
+
+         -->
+         <input name="giatrian" type="hidden" value="CaiNayBiAnDi">
+        <b>Tài khoản</b>
+        <input name="tai-khoan" readonly required type="text" value="admin" placeholder="Nhập tài khoản hoặc email ..."><br>
+        <b>Mật khẩu</b>
+        <input name="mat-khau" disabled type="password" value="123"><br>
+        <b>Email</b>
+        <input name="email" type="email"><br>
+        <b>Tuổi</b>
+        <input name="tuoi" type="number" max="100" min="1" step="1"><br>
+        <b>Ngày sinh</b>
+        <input name="ngaysinh" type="date" ><input name="thoigian" type="time"><br>
+        <b>Ảnh đại diện</b>
+        <input name="anh" type="file" multiple><br>
+        <b>Giới tính</b>
+        <input name="gioitinh" type="radio" value="nam"> Nam
+        <input name="gioitinh" type="radio" value="nữ"> Nữ<br>
+        <b>Sở thích</b>
+        <input name="sothich" type="checkbox" value="game"> GAME
+        <input name="sothich" type="checkbox" value="code"> CODE
+        <input name="sothich" type="checkbox"> THỂ THAO <br>
+        <b>Màu yêu thích</b>
+        <input name="mau" type="color"><br>
+        <b>Kỹ năng</b>
+        <input name="kynang" type="range" min="0" max="100"><br>  
+        <!-- Control lựa chọn -->
+        <b>KHÓA HỌC</b>
+        <!-- multiple: để chọn nhiều option -->
+        <select name="" id="" multiple>
+            <option value="1">JAVA WEB</option>
+            <option value="2">PHP</option>
+            <option value="3">.NET</option>
+        </select><br>
+        <!-- Vùng nhập văn bản -->
+        <textarea name="" id="" cols="30" rows="10">
+
+        </textarea>
+        <!-- Nút bấm -->
+        <!-- 
+            submit: gửi thông tin trên form
+            reset:  làm mới các control trong form
+            button: không tác động đến form
+         -->
+        <button type="submit">Gửi</button>
+        <button type="reset">Làm mới</button>
+        <button type="button">Nút bấm</button>
+    </form>
+</body>
+</html>

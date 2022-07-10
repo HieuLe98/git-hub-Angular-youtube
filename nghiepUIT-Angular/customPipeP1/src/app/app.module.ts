@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { FormatDataPipe } from './pipe/format-data.pipe';
+import { FilterPipe } from './pipe/filter.pipe';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    FormatDataPipe,
+    FilterPipe
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

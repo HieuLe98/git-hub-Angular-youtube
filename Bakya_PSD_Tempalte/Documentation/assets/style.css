@@ -1,0 +1,96 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+img{
+	padding: 10px 0px 25px 0px;
+}
+a{
+	text-decoration: none;
+	color: #002ce9;
+	font-family: 'Roboto', sans-serif;
+}
+a:hover{
+	text-decoration: underline;
+}
+.container{
+	padding: 50px 0px 0px 0px;
+	width: 790px;
+	margin: 0px auto;
+}
+.title-l{
+	font-size: 26px;
+	color: #1d1d1d;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+.top-content-box{
+	margin-top: 35px;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding:  15px 0px;
+}
+.title-m{
+	color: #1b1b1b;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+.text-normal{
+	color: #393939;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.psd-files{
+	margin-top: 35px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ebebeb;
+}
+.psd-files ul li{
+	list-style: none;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+.how-to{
+	margin-top: 35px;
+	border-bottom: 1px solid #ebebeb;
+}
+.title-s{
+	color: #1b1b1b;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+.credits{
+	margin-top: 35px;	
+}
+.images a{
+	width: 100%;
+	display: inline-block;
+}
+.font, .icons,  .images{
+	margin-bottom: 25px;
+}
+.note{
+	margin-bottom: 25px;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 15px;
+}
+.note-b{
+	font-weight: bold;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+.note span{
+	color: red;
+}
+.support{
+	margin-bottom: 100px;
+}

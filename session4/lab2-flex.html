@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .header{
+            background-color: palevioletred;
+        }
+
+        .menu{
+            background-color: skyblue;
+        }
+
+        .wrap{
+            height: 500px;
+            /* border: solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col1{
+            width: 30%;
+            
+            
+        }
+
+        .col2{
+            width: 40%;
+            
+           
+        }
+
+        .col3{
+            width: 30%;
+            
+            
+        }
+
+        .item1 {
+            height: 500px;
+            border: 2px solid black;
+            margin-bottom: 30px;
+            background-color: red;
+        }
+
+        .item2 {
+            height: 500px;
+            border: 2px solid black;
+            margin-bottom: 30px;
+            background-color: yellow;
+        }
+
+        .item3 {
+            height: 500px;
+            border: 2px solid black;
+            margin-bottom: 30px;
+            background-color: blue;
+        }
+
+        .footer{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">Header</header>
+    <nav class="menu">Menu</nav>
+    <div class="wrap">
+        <div class="col1"><div class="item1">Left</div></div>
+        <div class="col2"><div class="item2">Content</div></div>
+        <div class="col3"><div class="item3">Right</div></div>
+    </div>
+    <footer class="footer">Footer</footer>
+
+</body>
+</html>

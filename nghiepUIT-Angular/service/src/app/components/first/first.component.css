@@ -1,0 +1,9 @@
+.panel-primary {
+  border-radius: 4px;
+  border: 1px solid aqua;
+}
+
+.panel-heading {
+  background-color: aqua;
+  color: #fff;
+}

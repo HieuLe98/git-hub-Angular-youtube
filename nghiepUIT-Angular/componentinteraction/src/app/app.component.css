@@ -1,0 +1,15 @@
+.container {
+  max-width: 1200px ;
+  margin: 0 auto;
+  border: 2px solid #000;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-50 {
+  width: 50%;
+}

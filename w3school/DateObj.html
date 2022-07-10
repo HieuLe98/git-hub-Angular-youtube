@@ -1,0 +1,92 @@
+<!--
+    Creating Date Objects
+    Date objects are created with the new Date() constructor.
+
+    There are 4 ways to create a new date object:
+
+    new Date()
+    new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    new Date(milliseconds)
+    new Date(date string)
+
+    new Date():
+    new Date() creates a new date object with the current date and time:
+    
+    const d = new Date();
+
+    Date objects are static. The computer time is ticking, but date objects are not.
+
+    Lưu ý: JavaScript tính các tháng từ 0 đến 11: Tháng 1 = 0. Tháng 12 = 11
+    Chỉ định một tháng cao hơn 11, sẽ không gây ra lỗi nhưng thêm phần tràn vào năm tiếp theo:
+    Việc chỉ định một ngày cao hơn giá trị tối đa, sẽ không gây ra lỗi nhưng sẽ thêm phần tràn vào tháng tiếp theo:
+
+    new Date(year, month, ...)
+    new Date(year, month, ...) creates a new date object with a specified date and time.
+
+    7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+
+    const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+    7 số chỉ rõ năm, tháng, ngày, giờ, phút, giây, mili giây:
+    Bạn không thể bỏ qua tháng. Nếu bạn chỉ cung cấp một tham số, nó sẽ được coi là mili giây.
+
+    Năm một và hai chữ số sẽ được hiểu là 19xx:
+
+    new Date(dateString)
+    new Date(dateString) creates a new date object from a date string:
+    
+    const d = new Date("October 13, 2014 11:13:00");
+
+    JavaScript lưu trữ ngày dưới dạng số mili giây kể từ ngày 1 tháng 1 năm 1970
+
+    new Date(milliseconds)
+    Tạo 1 đối tượng thời gian + với mili giây
+    Một ngày (24 giờ) là 86 400 000 mili giây.
+    Khi bạn hiển thị một đối tượng ngày tháng trong HTML, nó sẽ tự động được chuyển đổi thành một chuỗi, với phương thức toString ().
+
+    The toUTCString() method converts a date to a UTC string (a date display standard).
+    Phương thức toDateString () chuyển đổi một ngày thành một định dạng dễ đọc hơn:
+
+    Nếu bạn có một chuỗi ngày hợp lệ, bạn có thể sử dụng phương thức Date.parse () để chuyển đổi nó thành mili giây. Date.parse () trả về số mili giây từ ngày đến ngày 1 tháng 1 năm 1970:
+
+    let msec = Date.parse("March 21, 2012");
+
+    getFullYear()	        Nhận năm dưới dạng số có bốn chữ số (yyyy)
+    getMonth()	            Nhận tháng dưới dạng số (0-11)
+    getDate()	            Nhận ngày dưới dạng một số (1-31)
+    getHours()	            Nhận giờ (0-23)
+    getMinutes()	        Get the minute (0-59)
+    getSeconds()	        Get the second (0-59)
+    getMilliseconds()	    Get the millisecond (0-999)
+    getTime()	            Nhận thời gian (mili giây kể từ ngày 1 tháng 1 năm 1970)
+    getDay()	            Nhận ngày trong tuần dưới dạng một số (0-6)
+    Date.now()	            Get the time. ECMAScript 5.
+
+    Bạn có thể sử dụng một mảng tên và getMonth () để trả về tháng dưới dạng tên:
+
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    const d = new Date();
+    let month = months[d.getMonth()];
+
+    getUTCDate()	        Same as getDate(), but returns the UTC date
+    getUTCDay()	            Same as getDay(), but returns the UTC day
+    getUTCFullYear()	    Same as getFullYear(), but returns the UTC year
+    getUTCHours()	        Same as getHours(), but returns the UTC hour
+    getUTCMilliseconds()	Same as getMilliseconds(), but returns the UTC milliseconds
+    getUTCMinutes()	        Same as getMinutes(), but returns the UTC minutes
+    getUTCMonth()	        Same as getMonth(), but returns the UTC month
+    getUTCSeconds()	        Same as getSeconds(), but returns the UTC seconds
+
+    setDate()	            Set the day as a number (1-31)
+    setFullYear()	        Set the year (optionally month and day)
+    setHours()	            Set the hour (0-23)
+    setMilliseconds()	    Set the milliseconds (0-999)
+    setMinutes()	        Set the minutes (0-59)
+    setMonth()	            Set the month (0-11)
+    setSeconds()	        Set the seconds (0-59)
+    setTime()	            Set the time (milliseconds since January 1, 1970)
+
+    EX: 
+    const d = new Date();
+    d.setFullYear(2020, 11, 3);
+-->

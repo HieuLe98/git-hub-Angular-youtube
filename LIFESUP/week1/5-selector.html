@@ -1,0 +1,37 @@
+<!--
+    
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SELECTOR</h1>
+    <h2>So sánh [attribute^=value] và [attribute|=value] </h2>
+    <p>
+        <h3>[attribute^=value]</h3>
+        - Giá trị của thuộc tính phải được bắt đầu bởi chuỗi ký tự được chỉ định. <br><br>
+
+        - Ví dụ: Chọn phần tử có thuộc tính title với điều kiện là giá trị của nó phải bắt đầu bằng chuỗi "tinh" <br><br>
+
+        [title^="tinh"]{ <br>
+            color:blue; <br>
+        }
+        <br><br>
+        <h3>[attribute|=value]</h3> 
+        - Giá trị của thuộc tính phải được bắt đầu bởi một từ (word) được chỉ định. <br><br>
+
+        - Lưu ý: Từ (word) đó phải là độc lập hoặc được nối tiếp bởi một dấu gạch nối. <br><br>
+
+        - Ví dụ: Chọn phần tử có thuộc tính title với điều kiện là giá trị của nó phải được bắt đầu bởi từ yeu <br><br>
+
+        [title|="yeu"]{ <br>
+            color:blue; <br>
+        }
+    </p>
+</body>
+</html>

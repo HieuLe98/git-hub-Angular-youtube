@@ -1,0 +1,20 @@
+<!--
+    Array.lastIndexOf () giống như Array.indexOf (), nhưng trả về vị trí của lần xuất hiện cuối cùng của phần tử được chỉ định.
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.lastIndexOf()</h2>
+<p id="demo"></p>
+
+<script>
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.lastIndexOf("Apple") + 1;
+
+document.getElementById("demo").innerHTML = "Apple is found in position " + position;
+</script>
+
+</body>
+</html>

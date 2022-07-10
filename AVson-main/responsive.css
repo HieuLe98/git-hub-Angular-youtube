@@ -1,0 +1,243 @@
+@media screen and (max-width: 705px) {
+  .logo {
+    height: 8vh;
+  }
+  header {
+    height: 20vh;
+  }
+  .header {
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 475px) {
+  .logo {
+    height: 7vh;
+  }
+  nav ul li {
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width: 395px) {
+  .logo {
+    height: 7vh;
+  }
+  nav ul li {
+    font-size: 2vh;
+    padding: 2px 3px;
+  }
+  .start{
+    padding: 2vh 5vw;
+  }
+}
+@media screen  and (max-width: 945px){
+  .heading1{
+    font-size: 6vh;
+  }
+  .text1{
+    font-size: 15vh;
+  }
+  
+  
+}
+@media screen  and (max-width: 600px){
+  .book{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .text, .date1, .date2, #option1, #option2, .now{
+    height: 12vh;
+    width: 50vw;
+  }
+  
+}
+@media  screen and (max-width:1000px) {
+  .about{
+    display: flex;
+    
+  }
+  .text3{
+    margin: 5vh 5vw;
+  }
+  
+}
+@media  screen and (max-width: 805px) {
+
+  .about{
+   height: 160vh;
+  }
+  .img1{
+    width: 39vw;
+  }
+  
+}
+@media  screen and (max-width: 585px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .img1{
+    height: 70vh;
+    margin-top: 15vh;
+  }
+  .text3{
+    margin-top: 5vh;
+   
+  }
+  .latestproducts{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .latest{
+    height: 90vh;
+    width: 90vw;
+    margin-top: 2vh;
+  }
+  .guest{
+   margin-left: 10vw;
+  }
+  
+}
+
+@media  screen and (max-width:1085px) {
+  .service1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .apartment,
+.event,
+.food,
+.spa,
+.sports,
+.gym{
+  height: 60vh;
+  width: 80vw;
+}
+  
+}
+@media screen and (max-width: 522px) {
+  .text9{
+    font-size: 15vw;
+    margin: 7vh;
+  }
+  
+}
+@media screen and (max-width: 1050px) {
+  .ourprojects{
+    display: grid;
+  }
+  
+}
+@media screen and (max-width: 745px) {
+  .image2{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media  screen and (max-width: 991px) {
+ 
+.whyus{
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+@media screen  and (max-width:640px){
+  .image10{
+    height: 70vh;
+    width: 80vw;
+  }
+  
+}
+@media screen and (max-width: 1060px){
+
+  .feedback{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+  }
+  .feedback1{
+    margin-bottom: 5vh;
+  }
+  
+}
+@media screen  and (max-width:545px){
+  .feedback1{
+    height: 80vh;
+    width: 90vw;
+  }
+  .feedback2{
+    height: 80vh;
+    width: 90vw;
+  }
+  .img1{
+    width: 80vw;
+  }
+  
+}
+@media screen and (max-width:995px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+}
+@media screen  and (max-width:625px){
+  .map1{
+    width: 80vw;
+    height: 90vh;
+  }
+  
+}
+@media screen and (max-width:755px) {
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .footer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media screen and (max-width: 580px) {
+  .latestproducts{
+    margin-top: 10vh;
+  }
+  .latest{
+    height: 150vh;
+  }
+   
+ }
+ @media screen and (max-width: 440px) {
+   .latestproducts{
+     margin-top: 50vh;
+   }
+    
+  }
+  @media screen and (max-width:285px) {
+    .text1{
+      font-size: 15vw;
+    }
+    .latestproducts{
+      margin-top: 90vh;
+    }
+    
+  }

@@ -1,0 +1,25 @@
+<div class="child-container">
+  <div>
+    <h3>Child Component</h3>
+  </div>
+
+  <div>
+    <h2>Tên: {{name}}</h2>
+    <h3>Married: {{ isMarried ? 'Mất tự do' : 'Tự do' }}</h3>
+    <h3 >Tuổi: {{myAge}}</h3>
+
+    <form action="">
+      <legend>Form title</legend>
+
+      <div class="form-group row">
+        <label for="">Fullname: </label>
+        <input type="text" class="form-control" [(ngModel)]="txtFullName" [ngModelOptions]="{standalone: true}">
+
+        <label for="">Phone: </label>
+        <input type="text" class="form-control" [(ngModel)]="txtPhone" [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <button type="button" class="btn" (click)="onSubmitForm()">Send</button>
+    </form>
+  </div>
+</div>

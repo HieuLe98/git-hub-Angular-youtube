@@ -1,0 +1,22 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Thêm - Sửa Phim</h3>
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label for="">Tên phim</label>
+        <input type="text" class="form-control" #name>
+      </div>
+      <div class="form-group">
+        <label for="">Đường dẫn</label>
+        <input type="text" class="form-control" #link>
+      </div>
+      <div class="form-group">
+        <label for="">Tác giả</label>
+        <input type="text" class="form-control" #author>
+      </div>
+      <button style="margin-top: 24px;" class="btn btn-danger" type="button" (click)="addVideo(name.value, link.value, author.value)">Thêm</button>
+    </form>
+  </div>
+</div>

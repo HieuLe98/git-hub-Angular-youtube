@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <input type="" name="" placeholder="Nhập tên" class="input" id="userName">
+        </div>
+
+        <div>
+            <input type="" name="" placeholder="Nhập mật khẩu" class="input" id="password">
+        </div>
+
+        <div>
+            <input type="submit" name="" value="Đăng nhập">
+        </div>
+    </form>
+    <!-- Bước 1 viết sự kiện blur với bộ chọn class và chúng ta sẽ lấy id động theo từng input -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $('.input').blur(function(id){
+            alert(this.id);
+            // Bước 2 Lấy giá trị của input theo từng id get về, và so sánh với null,
+            var _id = (this.id);
+            var item = $('#' + _id).val();
+
+            if(item == '')
+            {
+                alert('Bạn chưa nhập'  + _id);
+            }
+        });
+    </script>
+
+    <!-- <script>
+        $('.input').blur(function(id){
+            
+            
+        });
+    </script> -->
+
+
+</body>
+</html>

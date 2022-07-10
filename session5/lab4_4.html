@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function tinh_tong(n) 
+        {
+            var tong = 0;
+            var index = 0;
+
+            while (index <= n)
+            {
+                if (index % 2 == 0)
+                {
+                    tong += index;
+                }
+                index++;
+                
+            }
+            return tong;
+        }
+
+        var n = parseInt(prompt('Nhập số cần kiểm tra'));
+        document.write('Tổng các chữ số chẵn nhỏ hơn ' + n + ' là: ' + tinh_tong(n));
+
+    </script>
+</body>
+</html>

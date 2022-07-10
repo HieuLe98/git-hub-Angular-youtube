@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .effect {
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-size: 36px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: red;
+            transition: width 3s, height 3s 3s, background-color 3s;
+            transform: skew(45deg);
+        }
+
+        .effect:hover {
+            /* width: 500px;
+            height: 500px;
+            background-color: green; */
+            transform: scale(1.2 , 1.2);
+        }
+
+        @media (min-width: 480px)  {
+            .effect{
+                background-color: blue;
+            }
+        }
+
+        @media (min-width: 768px)  {
+            
+            .effect {
+                background-color: green;
+            }
+
+        }
+
+        @media (min-width: 1200px) {
+            .effect {
+                background-color: red;
+            }
+        }
+
+        @media (min-width: 480px and max-width: 767px) {
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="effect">ABC</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.header {
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 64px;
+}
+
+.header__menu {
+  margin: 20px 24px 20px 40px;
+}
+
+.header__brand {
+  margin: 18px 0;
+  flex: 1;
+}
+
+.header__notify {
+  margin: 22px 22px 18px 0;
+}
+
+.header__avatar {
+  margin: 20px 8px 16px 0;
+}
+
+.header__welcome {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin: 25px 64px 21px 0;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script type="text/javascript">
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var x = document.getElementById('demo');
+        x.innerHTML = "Trình duyệt này rộng: " + w + " , cao: " + h + " .";
+    </script>
+
+    <h1>Hãy click vào nút Open để mở file a.html</h1>
+    <p>
+        <button type="button" onclick="window.open('a.html')">Open</button>
+    </p>
+</body>
+</html>

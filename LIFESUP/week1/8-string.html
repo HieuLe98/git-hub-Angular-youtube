@@ -1,0 +1,38 @@
+<!--
+    Để tìm xem String có chứa 1 String khác hay không thì ta dùng includes()
+    Phương thức include () trả về true nếu một chuỗi chứa một giá trị được chỉ định.
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<!--includes()-->
+<p>Kiểm tra xem chuỗi "Hello world, welcome to the universe." có chứa "world" ko, nếu có trả về true</p>
+
+<p id="demo"></p>
+
+<!--indexOf()-->
+<p>Tìm vị trí của "locate" trong chuỗi "Please locate where 'locate' occurs!" : </p>
+
+<p id="demo1"></p>
+
+<!--match().length-->
+<p>Kiểm tra số lần xuất hiện của "ain" trong chuỗi "The rain in SPAIN stays mainly in the plain" :</p>
+
+<p id="demo2"></p>
+
+<script>
+let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = "Kết quả: " + text.includes("world");
+
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo1").innerHTML = "Kết quả: " + str.indexOf("locate");
+
+let text2 = "The rain in SPAIN stays mainly in the plain"; 
+document.getElementById("demo2").innerHTML = "Kết quả: " + text2.match(/ain/g).length;
+</script>
+
+</body>
+</html>

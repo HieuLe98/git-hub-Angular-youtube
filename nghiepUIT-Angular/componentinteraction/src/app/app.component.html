@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+
+      <div class="col-50">
+        <h2>Đây là: {{ txtFullName }}</h2>
+        <h2>SĐT: {{ txtPhone }}</h2>
+        <app-child [married] = "isMarried" [age] = "age" [name] = "name" (txtFullName) = "getFullName($event)" (txtPhone)="getPhone($event)"></app-child>
+      </div>
+
+      <div class="col-50">
+        <user-list [users] = "users" [fullname] = "txtFullName" [phone] = "txtPhone"></user-list>
+      </div>
+  </div>
+</div>

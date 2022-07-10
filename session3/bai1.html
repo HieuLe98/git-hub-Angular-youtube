@@ -1,0 +1,290 @@
+<!--
+    // summary
+        Thẻ summary sẽ định nghĩa một tiêu đề của thẻ details. Tiêu đề này sẽ được người dùng thấy và xác định nội dung mà thẻ details đã ẩn đi.
+        Sử dụng thẻ summary để mô tả tóm tắt nội dung mà thẻ details sẽ đề cập đến.
+
+    //
+
+    //  time
+        - Thẻ <time> thường dùng để đánh dấu những phần văn bản là: thời gian, ngày tháng, ngày lễ, ....
+        - Thẻ <time> không có hiển thị gì đặc biệt lên màn hình. Tuy nhiên, trình duyệt có thể đọc và hiểu được đó là những móc thời gian để sau này phát triển những ứng dụng như nhắc nhở, lịch, sinh nhật, .... và các công cụ tìm kiếm có thể tạo ra những kết quả thông minh hơn.
+
+    // aside
+         Thẻ <aside> định nghĩa nội dung bên ngoài nội dung chính.
+
+         Nội dung trong <aside> nên liên quan tới phần nội dung chính.
+
+    // audio
+        Thẻ <audio> sẽ định nghĩa đó là một file âm thanh, chẳng hạn như file nhạc hoặc môt luồng âm thanh khác.
+
+    // command
+        Tag <command> định nghĩa một nút lệnh, giống như một button radio, checkbox, hoặc một button. Tag <command> chỉ hiển thị khi nằm bên trong tag <menu>.
+    
+    // data
+        Thẻ <data> được sử dụng để thêm bản dịch mà máy có thể đọc được của một nội dung nhất định. Phần tử này cung cấp cả giá trị máy đọc được cho bộ xử lý dữ liệu và giá trị con người có thể đọc được để hiển thị trong trình duyệt.
+    
+    // datalist
+        Tag <datalist> định nghĩa một danh sách tùy chọn.
+        Tag <datalist> được sử dụng cùng với các thành phần <input /> nhằm xác định giá trị các thành phần     <input /> có thể có (tương tự như <select> - <option>).
+        Sử dụng thuộc tính list trong <input /> để cho biết thành phần <input /> nào liên quan đến <datalist>
+
+    Thẻ	Mô tả chức năng
+	
+    Xác định một đoạn chú thích
+
+    <!DOCTYPE>	
+    Xác định cho trình duyệt biết phiên bản HTML mà bạn đang sử dụng
+
+    <a>	
+    Tạo một liên kết đến một tài liệu nào đó (khi người dùng bấm vào liên kết thì sẽ được chuyển đến tài liệu đó)
+
+    <abbr>	
+    Định nghĩa một từ viết tắt
+
+    <address>	
+    Xác định thông tin liên hệ của tác giả (hoặc chủ sở hữu) trang web
+
+    <audio>	
+    Tạo một "trình phát nhạc" cho trang web
+
+    <b>	
+    Xác định đoạn văn bản được in đậm
+
+    <base>	
+    Xác định "đường dẫn cơ sở" trong trang web và kiểu mở liên kết mặc định
+
+    <bdo>	
+    Điều hướng một đoạn văn bản được chỉ định
+
+    <big>	
+    Xác định một đoạn văn bản có kích thước chữ to hơn văn bản bình thường
+
+    <blockquote>	
+    Xác định một "đoạn trích dẫn" từ một website khác
+
+    <body>	
+    Xác định phần thân của tài liệu HTML
+    (chứa những phần tử sẽ được hiển thị lên màn hình trình duyệt)
+
+    <br>	
+    Chèn một ngắt xuống dòng
+
+    <caption>	
+    Tạo tiêu đề cho bảng
+
+    <code>	
+    Xác định một đoạn văn bản mang ý nghĩa là các mã lệnh
+
+    <del>	
+    Tạo một đường kẻ ngang lên văn bản
+
+    <summary>
+    &
+    <details>	
+    Tạo phần tử có dạng:
+
+    "chỉ hiển thị tiêu đề còn chi tiết bị ẩn, khi bấm vào tiêu đề thì chi tiết mới hiển thị"
+
+    <dialog>	
+    Tạo một hộp thoại
+
+    <div>	
+    Nhóm các phần tử lại với nhau để tiện cho việc định dạng cũng như thiết kế bố cục của trang web
+
+    <em>	
+    Xác định một đoạn văn bản được định dạng kiểu chữ in nghiêng
+
+    <embed>	
+    Dùng để nhúng một "tài liệu" nào đó vào trang web
+
+    <figcaption>	
+    Tạo một tiêu đề cho nội dung được đặt bên trong phần tử <figure>
+
+    <figure>	
+    Xác định một nội dung cần được tách biệt rõ ràng
+
+    <footer>	
+    Xác định phần chân của trang web
+
+    <frame>	
+    Xác định một khung trong một bộ khung
+
+    <frameset>	
+    Xác định một bộ khung
+
+    <h1> - <h6>	
+    Tạo những đề mục quan trọng trong trang web
+
+    <head>	
+    Xác định phần head của tài liệu HTML
+    (chứa các thẻ cung cấp thông tin cho trang web)
+
+    <header>	
+    Xác định phần đầu của trang web
+
+    <hr>	
+    Tạo một đường kẻ phân cách nằm ngang
+
+    <html>	
+    Xác định một tài liệu HTML
+
+    <i>	
+    Xác định một đoạn văn bản được định dạng kiểu chữ in nghiêng
+
+    <iframe>	
+    Nhúng một trang web khác vào trang web hiện tại
+
+    <img>	
+    Chèn hình ảnh vào trang web
+
+    <ins>	
+    Tạo một đường gạch chân lên văn bản
+
+    <kbd>	
+    Xác định một từ (hoặc cụm từ) mang ý nghĩa là một phím hoặc tổ hợp phím
+
+    <li>	
+    Xác định một "danh mục" trong danh sách
+
+    <main>	
+    Xác định phần thân của trang web
+
+    <map>
+    &
+    <area>	
+    Tạo một bản đồ ảnh
+
+    <mark>	
+    Đánh dấu màu nền nổi bật cho văn bản
+
+    <meta>	
+    Cung cấp thêm "thông tin về trang web" cho trình duyệt và các công cụ tìm kiếm
+
+    <meter>	
+    Tạo phần tử có ý nghĩa giống như: thước đo, ổ đĩa, ....
+
+    <nav>	
+    Xác định một tập hợp các liên kết & thường được sử dụng kết hợp với CSS để tạo một thanh menu
+
+    <noframes>	
+    Xác định một nội dung sẽ được hiển thị khi trình duyệt không hỗ trợ thẻ <frame>
+
+    <noscript>	
+    Xác định một nội dung HTML sẽ được hiển thị khi trình duyệt không hỗ trợ JavaScript hoặc đã tắt JavaScript
+
+    <object>	
+    Dùng để nhúng một "tài liệu" nào đó vào trang web
+
+    <ol>	
+    Xác định một danh sách có thứ tự
+
+    <p>	
+    Xác định một đoạn văn bản
+
+    <pre>	
+    Giúp cho nội dung mà bạn muốn hiển thị lên màn hình được giữ nguyên định dạng giống như trong lúc soạn thảo
+
+    <progress>	
+    Tạo một thanh tiến trình
+
+    <q>	
+    Xác định một câu trích dẫn ngắn
+
+    <s>	
+    Tạo một đường kẻ ngang lên văn bản
+
+    <script>	
+    Dùng để làm thùng chứa cho các câu lệnh JavaScript
+
+    <small>	
+    Xác định một đoạn văn bản có kích thước chữ nhỏ hơn văn bản bình thường
+
+    <source>	
+    Chỉ định tài nguyên cho trình nghe nhạc hoặc trình xem phim
+
+    <span>	
+    Nhóm các phần tử nội tuyến lại với nhau để tiện cho việc định dạng CSS
+
+    <strong>	
+    Xác định đoạn văn bản được in đậm
+
+    <style>	
+    Dùng để làm thùng chứa cho các đoạn mã CSS
+
+    <sub>	
+    Tạo văn bản có kích thước nhỏ, nằm ở khoảng nửa dưới văn bản bình thường
+
+    <sup>	
+    Tạo văn bản có kích thước nhỏ, nằm ở khoảng nửa trên văn bản bình thường
+
+    <table>	
+    Xác định phần tử là một cái bảng
+
+    <tbody>	
+    Xác định những dòng nào thuộc "phần thân" của bảng
+
+    <td>	
+    Xác định phần tử là một ô trong hàng
+
+    <tfoot>	
+    Xác định những dòng nào thuộc "phần chân" của bảng
+
+    <th>	
+    Xác định phần tử là một ô tiêu đề trong hàng
+
+    <thead>	
+    Xác định những dòng nào thuộc "phần đầu" của bảng
+
+    <time>	
+    Đánh dấu những phần văn bản là: thời gian, ngày tháng, ngày lễ, ....
+
+    <title>	
+    Xác định tiêu đề của trang web
+
+    <tr>	
+    Xác định phần tử là một hàng trong bảng
+
+    <track>	
+    Chèn một bản phụ đề vào video
+
+    <u>	
+    Tạo một đường gạch chân lên văn bản
+
+    <ul>	
+    Xác định một danh sách không có thứ tự
+
+    <video>	
+    Tạo một "trình xem phim" cho trang web
+
+    <wbr>	
+    Ngắt bớt ký tự của một từ xuống dòng.
+
+    (trong trường hợp chiều rộng của phần tử không đủ để chứa hết từ đó)
+
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài liệu thực hành HCJ</title>
+</head>
+<body>
+    <h1>Hello HTML</h1>
+    <img src="https://lambanner.com/wp-content/uploads/2018/03/lambanner-thiet-ke-banner-html5.jpg" width="300" alt="">
+
+    <p style="width: 1200px; float: right;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et ultricies sapien. Mauris quis est eu tellus mollis placerat. Pellentesque neque neque, ornare id erat pharetra, sagittis fringilla metus. Proin ultricies, nunc et auctor consequat, lorem arcu vestibulum dui, sit amet accumsan massa metus ut nisi. Aliquam lobortis nibh purus, vitae mollis velit egestas eget. Duis blandit sem vitae dui laoreet, a convallis elit faucibus. Nunc aliquam eget leo eget sollicitudin. Integer a sem nunc. Maecenas et pulvinar tellus. Donec rhoncus ornare egestas. Nullam non erat eu ligula ornare semper ac in mauris. Ut eu tortor velit. Vivamus enim mi, pulvinar non vehicula vitae, commodo sed magna. Nulla efficitur varius nisl eu finibus. Nam in libero non ligula porta fringilla a nec libero
+        ...........................................................................................................................................
+        ...........................................................................................................................................
+        ...........................................................................................................................................
+        ...........................................................................................................................................
+        ...........................................................................................................................................
+    </p>
+</body>
+</html>

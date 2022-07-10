@@ -1,0 +1,21 @@
+.child-container {
+  background-color: aquamarine;
+  padding: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: blue;
+  color: #fff;
+  padding: 8px;
+  width: 68px;
+  border-radius: 4px;
+}
+
+input {
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student {
+            // Hàm khởi tạo
+            constructor(id, name, age) {
+                // Các thuộc tính
+                id = this.id;
+                name = this.name;
+                age = this.age;
+            }
+
+            // Phương thức
+            hello = function() {
+                console.log("Xin chào, tên tôi là " + this.name);
+            }
+        }
+
+            // Khởi tạo đối tượng
+            var st = new Student();
+            st.hello();
+            st.email = "leminhhieu311098@gmail.com"
+            console.log(st);
+    </script>
+</body>
+</html>

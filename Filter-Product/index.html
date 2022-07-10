@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách sản phẩm</h1>
+        <ul class="tab">
+            <li class="tab-item  active" onclick="changeProductList('trend', this)">Phổ biến</li>
+            <li class="tab-item" onclick="changeProductList('new', this)">Mới nhất</li>
+            <li class="tab-item" onclick="changeProductList('best-sell', this)">Bán chạy</li>
+        </ul>
+
+        <div id="trend" class="animation">
+            <ul class="product-list">
+                <li><img src="images/home_product1.png" alt=""></li>
+                <li><img src="images/home_product2.png" alt=""></li>
+                <li><img src="images/home_product3.png" alt=""></li>
+                <li><img src="images/home_product4.png" alt=""></li>
+                <li><img src="images/home_product5.png" alt=""></li>
+                <li><img src="images/home_product6.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div id="new" class="animation">
+            <ul class="product-list">
+                <li><img src="images/home_product7.png" alt=""></li>
+                <li><img src="images/home_product8.png" alt=""></li>
+                <li><img src="images/home_product9.png" alt=""></li>
+                <li><img src="images/home_product10.png" alt=""></li>
+                <li><img src="images/home_product11.png" alt=""></li>
+                <li><img src="images/home_product12.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div id="best-sell" class="animation">
+            <ul class="product-list">
+                <li><img src="images/home_product13.png" alt=""></li>
+                <li><img src="images/home_product14.png" alt=""></li>
+                <li><img src="images/home_product15.png" alt=""></li>
+                <li><img src="images/home_product16.png" alt=""></li>
+                <li><img src="images/home_product1.png" alt=""></li>
+                <li><img src="images/home_product2.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>

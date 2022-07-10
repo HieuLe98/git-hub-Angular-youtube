@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Avson - Hotel Booking PSD Template   </title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="assets/scripts/jquery.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-ui.custom.min.js"></script>
+
+    <script type="text/javascript" src="assets/scripts/shCore.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/blueprint-css/shCoreDefault.css" />
+
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                // Cache selectors
+                var lastId,
+                    topMenu = $(".menu .alpha"),
+                    topMenuHeight = topMenu.outerHeight() + 15,
+                    // All list items
+                    menuItems = topMenu.find("a"),
+                    canUpdateURL = typeof history.pushState === "function" ? true : false,
+                    // Anchors corresponding to menu items
+                    scrollItems = menuItems.map(function () {
+                        var item = $($(this).attr("href"));
+                        if (item.length) {
+                            return item;
+                        }
+                    });
+
+                // Bind click handler to menu items
+                // so we can get a fancy scroll animation
+                menuItems.click(function (e) {
+                    var href = $(this).attr("href"),
+                        offsetTop = $(href).offset().top - topMenuHeight + 1;
+
+                    $('html, body').stop().animate({
+                        scrollTop: offsetTop
+                    }, 300);
+                    e.preventDefault();
+                });
+
+                // Bind to scroll
+                $(window).scroll(function () {
+                    // Get container scroll position
+                    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+                    // Get id of current scroll item
+                    var cur = scrollItems.map(function () {
+                        if ($(this).offset().top < fromTop)
+                            return this;
+                    });
+                    // Get the id of the current element
+                    cur = cur[cur.length - 1];
+                    var id = cur && cur.length ? cur[0].id : "";
+
+                    if (lastId !== id) {
+                        lastId = id;
+                        // Set/remove active class
+                        menuItems
+                            .parents('li').removeClass("active").end()
+                            .filter("[href=#" + id + "]").parent('li').addClass("active")
+                            .parents('li').addClass('active');
+
+                        if (canUpdateURL) {
+                            history.pushState(null, null, window.location.href.split('#').shift() + '#' + id);
+                        } else {
+                            var $section = $('#' + id);
+
+                            $section.attr('id', '');
+                            window.location.hash = '#' + id;
+                            $section.attr('id', id);
+                        }
+                    }
+                });
+
+                hashname = window.location.hash.replace('#', '');
+
+                $('.menu li').removeClass('active');
+                $('.menu li a[href=#' + hashname + ']')
+                    .parent('li').addClass('active')
+                    .parents('li').addClass('active');
+
+                elem = $('#' + hashname);
+
+                if (hashname.length > 1) {
+                    $('body, html').animate({
+                        scrollTop: $(elem).offset().top - topMenuHeight - 315
+                    }, 500, 'easeInOutCubic');
+                };
+            })
+        })(jQuery);
+    </script>
+</head>
+
+
+<body>
+    <div class="docs-header-bg">
+        <div class="docs-header">
+           <h1 class="center">Documentation</h1>
+
+  
+            
+        </div>
+    </div>
+    <div class="container">
+
+        <!--      Section       -->
+
+        <!-- 		<h2 id="toc" class="alt">Table of Contents</h2> -->
+
+        <div class="menu">
+            <ol class="alpha">
+                <li><a href="#information">General Info</a>
+                <li><a href="#folder-struc">Folder Structure</a></li>
+                <li><a href="#how-to">How To</a></li>
+                <li><a href="#credits">Credits</a>
+                </li>
+            </ol>
+        </div>
+
+
+        <h3 id="information"><strong>General Informations</strong> - <a href="#information">top</a></h3>
+
+		<h2>Avson - Hotel Booking PSD Template  </h2>
+
+			<h2>Main Features</h2>
+			<ul>
+				<li>Designed on 1170px Grid system</li>
+				<li>Creative and Modern Design</li>
+				<li>Named Groups & Layers</li>
+				<li>15 PSD Files with Layer Styles</li>
+				<li>Pixel Perfect Design</li>
+				<li>Easy To Customize</li>
+				<li>Free fonts & Icons</li>
+			</ul>
+
+
+        <div class="subitems">
+
+            <h3 id="folder-struc"><strong>PSD Folder Structure</strong> - <a href="#information">top</a></h3>
+            <ul class="folder-struc">
+                <li class="file folder">Documentation</li>
+                <li class="file folder">PSD</li>
+            </ul>
+
+            
+
+            <hr>
+			 
+
+            <!--      Section       -->
+
+            <h3 id="how-to"><strong>How To</strong> - <a href="#information">top</a></h3>
+
+            <h6 id="#move">How to Select layers in PSD?</h6>
+            <p>You can use Move Tool (V) for fast layer selection.</p>
+            <img src="assets/images/move_tool.png" />
+            <br /><br />
+
+            <h6 id="#sectionpsd">How to edit each section in PSD?</h6>
+            <p>Each section is separated with each folder with differ color marks.</p>
+            <img src="assets/images/Folder_Structure.png" />
+            <br /><br />
+
+            <h6 id="#editimage">How to change images in PSD?</h6>
+            <p>Place the image in image placeholder layer with clipping mask. So fit the image related position within the box.</p>
+            <img src="assets/images/image_change.png" />
+            <br /><br />
+
+            <h6 id="#edittext">How to edit text in PSD?</h6>
+            <p>Select the text layer and change the text.</p>
+            <img src="assets/images/edit_text.png" />
+            <br /><br />
+
+            <hr>
+
+
+			<h3 id="credits"><strong>HOW TO EDIT</strong> </h3>
+
+           <div class="narrow-p">
+
+			<p>In order to edit the file, you need to have Adobe Photoshop cc installed on your system, and the fonts mentioned in thecredits installed. 
+			As you can see on the right, the layers are well organized and gropued into folders, which make editing very easy.
+			So, all you have to do, is select the layer from the right, and then edit it with Adobe Photoshop</p>
+			<p> 
+ 
+
+			
+            <!-- Credits -->
+            <h3 id="credits"><strong>Sources and Credits</strong> </h3>
+
+           <div class="narrow-p">
+
+        <p><strong>Free fonts use:</strong></p>
+
+        <ul>
+
+			<li> <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a></li>
+			<li> <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a></li>
+					
+		</ul>
+</ul></br>	
+	<p><strong>Free Icons use:</strong></p>
+			
+			<li>Font Awesome</li>
+			<li> Flat icons</li>
+        </ul>
+
+        <hr class="space">
+
+
+        <p>All images have been used for demonstration purposes only and are not included in the template.</p>
+
+        <hr class="space">
+
+        <!-- Credits -->
+
+        <p><strong>Support:</strong> If you need any help using the file or need special customizing please feel free to contact me via my Themeforest profile. If you have a moment, please rate this item, I’ll appreciate it very much!….Thank you.
+
+        <hr class="space">
+
+        </div>
+
+
+    </div>
+    <!-- end div .container -->
+
+</body>
+
+</html>

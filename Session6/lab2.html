@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tạo form tính toán đơn giản với javascript</h2>
+    <form action="" name="form-add">
+        <p>
+            Số a: <input type="text" name="so_a" />    
+            Số b: <input type="text" name="so_b" />
+            <input type="submit" name="cong" value="Cộng"> 
+        </p>
+    </form>
+
+    <script>
+        var form = document.forms["form-add"];
+        form.cong.onclick = function() {
+            var tong = 0;
+            tong = parseInt(form.so_a.value) + parseInt(form.so_b.value);
+            alert("Tổng 2 số a và b là: " + tong);
+        }
+    </script>
+</body>
+</html>

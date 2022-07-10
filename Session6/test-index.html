@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text"> "Tìm xem một string có chứa một string khác không thì làm thế nào? 
+        Tìm vị trí cụ thể của string đó?
+        Tìm toàn bộ số lần xuất hiện của string đó"
+    </div>
+
+    <form action="" method="post" name="form-reg">
+        <p>
+            <input type="text" name="key">
+            <input type="button" name="search" value="Tìm kiếm">
+        </p>
+    </form>
+
+    <script language="javascript">
+        var text = document.getElementById("text").innerHTML;
+        var form = document.forms["form-reg"];
+        form.search.onclick = function() {
+            var reg = new RegExp(form.key.value);
+            var m = reg.exec(text);
+            if( m == null )
+            {
+                alert("Không tìm thấy chuỗi phù hợp");
+            }
+            else
+            {
+                var s = "Tìm thấy chuỗi tại vị trí " + m.index + ":\n" + m;
+                alert(s);
+            }
+        }
+    </script>
+</body>
+</html>

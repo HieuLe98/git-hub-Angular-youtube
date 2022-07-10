@@ -1,0 +1,64 @@
+.product {
+  background: rgba(52, 58, 64, 0.6);
+  border-radius: 6px;
+  padding-top: 18px;
+  padding-bottom: 26px;
+}
+
+.rect {
+  background: rgba(52, 170, 255, 0.6);
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.rect span {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 18px ;
+}
+
+.triangle {
+  margin-top: -40px;
+  margin-left: 120px;
+  border-width: 21px 21px 19px 34.64px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(52, 170, 255, 0.6);
+}
+
+.product__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.col-50 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.text-icon {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.text-icon {
+  margin-left: 12px;
+}
+
+.icon {
+  margin-left: 16px;
+}

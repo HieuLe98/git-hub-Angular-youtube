@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lý sự kiện</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <h1 id="show" style="border: 1px solid red; padding: 10px;"></h1>
+    <script>
+        var input = document.getElementById("txt");
+        var h1 = document.getElementById("show");
+
+        // Xử lý sự kiện
+        input.onkeyup = function() {
+            h1.textContent = input.value ;
+        }
+    </script>
+</body>
+</html>

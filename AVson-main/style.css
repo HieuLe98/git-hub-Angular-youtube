@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  
+ 
+}
+
+.progress {
+  width: 100%;
+  height: 0.3vh;
+  background-color: yellowgreen;
+  animation-name: progressbar;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+@keyframes progressbar {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+
+}
+
+.dropbtn {
+  position: relative;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  display: inline;
+}
+.dropbtn a:hover {
+  color: #fea116;
+}
+nav ul li {
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+nav ul li a:hover {
+  color: #fea116;
+}
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 12px 16px;
+  transition: 0.8s;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  background-color: #0f172b;
+}
+
+.dropdown-content {
+  background-color: white;
+  transition: 0.5s;
+  display: none;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0;
+  z-index: 5;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: white;
+}
+
+header {
+  height: 15vh;
+  background-color: #0f172b;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 15vh;
+  width: 100%;
+}
+
+nav ul li a {
+  color: white;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+.dropdown {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 15vh;
+  margin-left: 2vw;
+}
+main {
+  overflow-x: hidden;
+}
+
+.section1 {
+  height: 85vh;
+  width: 100%;
+  background-image: linear-gradient(
+    rgba(4,9,30,0.7), rgba(4,9,30,0.7)
+    ),
+    url(THE-BVLGARI-VILLA-THE-BVLGARI-RESORT-DUBAI-USA.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+.heading1 {
+  font-size: 7vh;
+
+  color: white;
+  font-weight: lighter;
+}
+.text1 {
+  font-size: 25vh;
+  margin-top: 2vh;
+  color: white;
+  font-weight: bolder;
+}
+.start {
+  background-color: #fea116;
+  border: 1px solid black;
+  padding: 4vh 10vh;
+  cursor: pointer;
+  border-radius: 5vh;
+  transition: 0.5s;
+  color: black;
+}
+
+.start:hover {
+  background-color: #0f172b;
+  color: white;
+}
+.get {
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+.booknow {
+  overflow-x: hidden;
+}
+.room {
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 5vh;
+}
+
+.book {
+  background-color: #f1f8ff;
+  margin: auto;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3vh 4vw;
+}
+.text {
+  height: 10vh;
+  width: 17vw;
+  margin: 5vh;
+  border-radius: 1vh;
+  border: 1px solid black;
+  font-family: cursive;
+  font-weight: bolder;
+  padding: 8px 15px;
+  
+}
+.date1 {
+  margin: 5vh;
+  height: 10vh;
+  width: 17vw;
+  border: 1px solid black;
+  border-radius: 1vh;
+  font-family: cursive;
+  font-weight: bolder;
+  padding: 8px 15px;
+
+}
+.date2 {
+  margin: 5vh;
+  height: 10vh;
+  width: 17vw;
+  border: 1px solid black;
+  border-radius: 1vh;
+  font-family: cursive;
+  font-weight: bolder;
+  padding: 8px 15px;
+
+}
+
+
+#option1 {
+  height: 10vh;
+  width: 17vw;
+  margin: 5vh;
+  border: 1px solid black;
+  border-radius: 1vh;
+  color: black;
+  padding: 12px 34px;
+
+}
+#option2 {
+  height: 10vh;
+  width: 17vw;
+  margin: 5vh;
+  border: 1px solid black;
+  border-radius: 1vh;
+  color: black;
+  padding: 12px 34px;
+}
+
+.now {
+  background-color: #fea116;
+  padding: 4vh;
+  border: 1px solid black;
+  border-radius: 2vh;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.text2 {
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+.now:hover {
+  background-color: #0f172b;
+  color: white;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+
+}
+.img1 {
+  margin-top: 2vh;
+  margin-left: 7vw;
+  height: 100vh;
+}
+.text3 {
+  margin-right: 8vw;
+}
+.us {
+  font-size: 5vh;
+  color: #fea116;
+  font-weight: lighter;
+}
+
+.welcome {
+  font-size: 1vh;
+  margin-top: 3vh;
+}
+.sit {
+  margin-top: 4vh;
+  font-weight: lighter;
+}
+
+#hotel {
+  margin-top: 8vh;
+  padding: 3vh;
+  font-size: 8vh;
+}
+#build {
+  padding: 3vh;
+  font-size: 8vh;
+}
+
+
+.number {
+  font-size: 8vh;
+}
+.text4 {
+  font-size: 2.5vh;
+  font-weight: lighter;
+}
+
+.latestproducts{
+  margin-top: 7vh;
+}
+.latest {
+height: 130vh;
+  width: 36%;
+  background-color: #0f172b;
+  display: flex;
+
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.h2 {
+  color: #fea116;
+  font-weight: bold;
+  margin-top: 20vh;
+}
+h1 {
+  color: white;
+  font-size: 6vh;
+  margin-top: 8vh;
+}
+
+.text5 {
+  color: white;
+  line-height: 4vh;
+  margin-top: 3vh;
+}
+.latestproducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: #f1f8ff; 
+}
+.guest {
+  display: grid;
+  margin-right: 12vw;
+}
+.text7 {
+  border: 1px solid white;
+  margin: 10vh;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 1vh;
+  box-shadow: 1px 2px 3px 2px;
+  padding: 15px 34px;
+}
+.text7:hover {
+  background-color: #0f172b;
+  color: white;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.yo1 {
+  margin-top: 8vh;
+  font-size: 4vh;
+  color: #fea116;
+}
+.yo2 {
+  margin-top: 6vh;
+  font-size: 8vh;
+  font-weight: bolder;
+}
+.service1 {
+  grid-template-columns: auto auto auto;
+  display: grid;
+  margin-top: 6vh;
+}
+
+.apartment,
+.event,
+.food,
+.spa,
+.sports,
+.gym {
+  height: 303px;
+  width: 350px;
+  border: 1px solid #b2d2f1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3vh;
+  border-radius: 10px;
+  box-shadow: 0px 0.5px 0px 0.5px;
+  transition: 1s;
+}
+#icon5 {
+  font-size: 8vh;
+}
+
+.room2 {
+  margin-top: 4vh;
+}
+.text8 {
+  margin-top: 5vh;
+}
+.gym:hover {
+  color: white;
+  background-color: #fea116;
+}
+.apartment:hover {
+  color: white;
+  background-color: #fea116;
+}
+.sports:hover {
+  color: white;
+  background-color: #fea116;
+}
+.event:hover {
+  color: white;
+  background-color: #fea116;
+}
+.spa:hover {
+  color: white;
+  background-color: #fea116;
+}
+.food:hover {
+  color: white;
+  background-color: #fea116;
+}
+.booking {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(pexels-photo-1458457.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.bookingnow {
+  margin-left: 10vw;
+}
+.luxurious {
+  color: white;
+  font-size: 5vh;
+  font-weight: lighter;
+}
+
+.text9 {
+  color: white;
+  font-size: 24vh;
+  font-weight: bolder;
+}
+.button3 {
+  padding: 3vh 10vh;
+  background-color: #fea116;
+  color: black;
+  border-radius: 5vh;
+  transition: 1s;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.button3:hover {
+  color: white;
+  background-color: #0f172b;
+}
+.text10 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3vh;
+}
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.ourprojects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image1 {
+  height: 100vh;
+}
+.ty1 {
+  height: 100vh;
+}
+.image2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 2vh;
+}
+.image3 {
+  margin: 2vh;
+}
+.project {
+  margin: 5vh;
+  color: #fea116;
+}
+.text11 {
+  margin-bottom: 12vh;
+  font-size: 7vh;
+  font-weight: bolder;
+}
+.whyus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15vh;
+  background-color: #f1f8ff;
+
+ 
+}
+.why2 {
+  color: #fea116;
+  font-weight: bold;
+}
+.text12 {
+  font-size: 7vh;
+  font-weight: bolder;
+  margin: 5vh;
+}
+.why {
+  margin-left: 5vw;
+}
+.more {
+  margin: 9vh;
+}
+.living {
+  margin-top: 3vh;
+}
+.text13 {
+  margin-top: 4vh;
+  font-weight: lighter;
+}
+.security {
+  margin-top: 3vh;
+}
+.text14 {
+  margin-top: 4vh;
+  font-weight: lighter;
+}
+.such {
+  margin-top: 3vh;
+}
+.text15 {
+  margin-top: 4vh;
+  font-weight: lighter;
+}
+.clientsfeedback {
+  background-color: #161e31;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+.text16,
+.client {
+  text-align: center;
+  margin-top: 3vh;
+}
+.client {
+  color: #fea116;
+  font-weight: bold;
+  font-size: 4vh;
+  word-spacing: 0.2vw;
+  letter-spacing: 0.1vw;
+  margin-top: 5vh;
+}
+.text16 {
+  font-size: 7vh;
+  color: white;
+  font-weight: bolder;
+}
+.feedback1 {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  
+  height: 301px;
+  width: 501px;
+  border: black;
+  margin: 0 5vw;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+.feedback1:hover {
+  border: 8px solid #fea116;
+}
+.feedback2 {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  
+  height: 301px;
+  width: 501px;
+  margin: 0 3vw;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+.feedback2:hover {
+  border: 8px solid #fea116;
+}
+.text17,
+.text18 {
+  margin-top: 9vh;
+  font-size: 4vh;
+  letter-spacing: 0.2vh;
+  word-spacing: 0.1vh;
+  font-weight: lighter;
+}
+.rating1,
+.rating2 {
+  margin-top: 3vh;
+  font-size: 5vh;
+}
+.contactus {
+  
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map,
+.call {
+  margin: 4vh 4vw;
+}
+.coffee {
+  color: #fea116;
+  font-weight: bold;
+  font-size: 4vh;
+}
+.text19 {
+  margin-top: 3vh;
+  font-size: 7vh;
+  font-weight: bolder;
+}
+.text20 {
+  margin-top: 2vh;
+}
+.address {
+  margin-top: 10vh;
+  
+
+  height: 35vh;
+  width: 30vw;
+}
+.text21 {
+  font-size: 3vh;
+}
+
+footer {
+
+  background-color: #0f172b;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vh;
+}
+.logo2,
+.quicklinks,
+.signup {
+  margin-top: 10vh;
+}
+.text22 {
+  color: white;
+  margin-top: 5vh;
+  text-align: center;
+}
+.icon10 {
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+}
+#icon10 {
+  padding: 1vh 1vw;
+
+  border: 0.5px solid;
+  border-radius: 50%;
+  opacity: 0.4;
+  margin: 1vh;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+#icon10:hover {
+  background-color: #fea116;
+  color: white;
+  opacity: 1;
+}
+.links {
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  font-size: 5vh;
+  margin: 5vh;
+}
+.part1 a,
+.part2 a {
+  color: white;
+  display: list-item;
+  list-style: none;
+  margin: 1vh;
+  transition: 0.5s;
+}
+.quicklinks {
+  display: list-item;
+  list-style: none;
+}
+.part1,
+.part2 {
+  margin: 2vh;
+}
+.part1 a:hover,
+.part2 a:hover {
+  color: #fea116;
+}
+
+.text23 {
+  color: white;
+  font-weight: bold;
+  font-size: 6vh;
+}
+.signup {
+  text-align: center;
+}
+.sign {
+  margin: 4vh;
+  padding: 12px 34px;
+  background-color: #fea116;
+
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sign:hover {
+  background-color: white;
+  color: black;
+}
+hr {
+  margin-top: 5vh;
+  opacity: 0.4;
+}
+footer{
+  overflow: hidden;
+}
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ul-li ul li a {
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.ul-li ul li a:hover {
+  color: #fea116;
+}
+.ul-li ul li {
+  display: inline;
+  padding: 10px 12px;
+}
+.ul-li {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-bottom: 3vh;
+}
+
+.copyright {
+  margin-top: 5vh;
+  margin-right: 4vw;
+ margin-bottom: 3vh;
+}
+.copy {
+  color: white;
+}

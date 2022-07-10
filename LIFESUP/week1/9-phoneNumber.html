@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            li {
+                list-style-type: none;
+                font-size: 16pt;
+            }
+
+            .mail {
+                margin: auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 400px;
+                background : #D8F1F8;
+                border: 1px soild silver;
+            }
+
+            .mail h2 {
+                margin-left: 38px;
+            }
+
+            input {
+                font-size: 20pt;
+            }
+
+            input:focus, textarea:focus{
+                background-color: lightyellow;
+            }
+            input submit {
+                font-size: 12pt;
+            }
+            
+            .rq {
+                color: #FF0000;
+                font-size: 10pt;
+            }
+
+    </style>
+</head>
+
+
+<body onload='document.form1.text1.focus()'>
+    <div class="mail">
+        <h2>Nhập SĐT theo định dạng 10 số bắt đầu bằng "0" hoặc "(+84)" [(+84) tương đương với 0]</h2>
+        <form name="form1" action="#">
+            <ul>
+                <li>
+                    <input  type='text' name='text1'/>
+                </li>
+                
+                <li class="submit">
+                    <input  type="submit" name="submit" value="Đăng ký" onclick="phonenumber(document.form1.text1)"/>
+                </li>
+                
+            </ul>
+        </form>
+    </div>
+
+
+    <script >
+        function phonenumber(inputtxt)
+    {
+             var phoneno = /((^[(][+](84)[)]+[^0()])[0-9]{8})$|(^0[0-9]{9}$)/;
+                if(inputtxt.value.match(phoneno))
+                {
+                    alert("Đăng ký thành công");
+                    return true;
+                }
+                else
+                {
+                    alert("Vui lòng nhập theo định dạng 10 số bắt đầu bằng 0 hoặc (+84) !         Lưu ý: [(+84) tương đương với 0]");
+                    return false;
+                }
+    }
+    
+     </script>
+</body>
+</html>
+

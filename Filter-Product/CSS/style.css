@@ -1,0 +1,82 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background: #f1f1f1;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 10px;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.container ul.tab {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.container ul.tab li {
+    background: #b14c38;
+    margin-right: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+
+.container ul.product-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container ul.product-list li img {
+    width: 216px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid #333;
+}
+
+#new, #best-sell {
+    display: none;
+}
+
+ul.tab li.active {
+    background: #ee4d2d;
+}
+
+#new, #best-sell, #trend {
+    -webkit-animation: slide-down 2s ease-out;
+    -moz-animation: slide-down 2s ease-out;
+    -webkit-animation: slide-down 2s ease-in;
+    -moz-animation: slide-down 2s ease-in;
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+}
